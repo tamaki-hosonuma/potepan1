@@ -27,6 +27,10 @@ ul {list-style-type: none;}
 ol {list-style-type: none;}
 
 
+body, div, p,  ul, ol, li, dl, dt, dd, table, th ,td, img, figure,
+h1, h2, h3 ,h4 ,h5, h6, form, select
+{ margin: 0; padding: 0; }
+
 /*header start*/
 
 
@@ -669,9 +673,12 @@ ol {list-style-type: none;}
   flex-direction: row-reverse;
   position:relative;
   margin-top: -20px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   align-items: center;
+  box-sizing:border-box;
 }  
+
+
   
 .message-text{
   background-color: #fff;
@@ -870,7 +877,7 @@ img {
   order: 2;
   margin:0px;
   padding-left: 200px;
-  padding-right: 200px;
+  padding-right: 120px;
 }
 
 .footer-character {
